@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 清除浮动（给父元素添加） */
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 195px;
+    height: 42px;
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 40px;
+    padding: 0 10px;
+    color: #050505;
+    font: 18px/40px 'Microsoft Yahei';
+}
+
+.nav ul li a:hover {
+    color: #00a4ff;
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    width: 410px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    margin-left: 70px;
+    font-size: 0;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
+    background-color: transparent;
+    color: #bfbfbf;
+    font-size: 14px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 40px;
+    border: none;
+    background-image: url(images/fa-search.png);
+}
+
+.user {
+    float: left;
+    height: 40px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #666;
+    /* 保证文字垂直居中 */
+    line-height: 40px;
+}
+
+.user img {
+    margin-right: 5px;
+    /* 保证图片与文字垂直方向上中部对齐 */
+    vertical-align: middle;
+}
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+    margin-top: 30px;
+}
+
+.banner .w {
+    height: 420px;
+    background: url(images/banner.png);
+}
+
+.subnav {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background: url(images/banner-left-bg.png);
+}
+
+.subnav li {
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+}
+
+.subnav ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.subnav ul li a span {
+    float: right;
+}
+
+.subnav ul li a:hover {
+    color: #00b4ff;
+}
+
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.course h2 {
+    height: 50px;
+    background-color: #9bceea;
+    color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.course .bd {
+    padding: 0 20px;
+}
+
+.course .bd ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.course .bd ul li h3 {
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.course .bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.course .bd a {
+    display: block;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 38px;
+}
+
+.goods {
+    height: 60px;
+    margin-top: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+    line-height: 60px;
+}
+
+.goods h3 {
+    float: left;
+    margin-left: 35px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.goods ul {
+    float: left;
+    margin-left: 33px;
+}
+
+.goods ul li {
+    float: left;
+}
+
+.goods ul li a {
+    padding: 0 35px;
+    border-left: 1px solid #bfbfbf;
+    font-size: 16px;
+    color: #050505;
+    /* a标签有左右padding，但是无上下padding */
+}
+
+.goods .mod {
+    float: right;
+    margin-right: 25px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+/* box1开始 */
+
+.box {
+    margin-top: 35px;
+}
+
+.box-hd {
+    height: 30px;
+    line-height: 30px;
+}
+
+.box-hd h3 {
+    float: left;
+    width: 140px;
+    font-size: 20px;
+    color: #494949;
+}
+
+.box-hd a {
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.box-bd {
+    width: 1215px;
+    /* height: 570px; */
+    /* 小tip：为了能让一行装下5个盒子，增加ul的宽度 */
+}
+
+.box-bd li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin: 15px 15px 0 0;
+    background-color: #fff;
+}
+
+.box-bd li img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.box-bd li h4 {
+    height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #050505;
+}
+
+.box-bd li p {
+    padding-left: 20px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.box-bd li p span {
+    color: #ff7c2d;
+}
+
+.box-bd li .hot {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+    width: 40px;
+}
+
+/* 编程入门部分head增添下边距 */
+
+.box-mb {
+    margin-bottom: 15px;
+}
+
+/* 编程入门部分head中心文字 */
+
+.hd-center {
+    float: left;
+    margin-left: 255px;
+}
+
+.hd-center li {
+    float: left;
+}
+
+.hd-center li a {
+    padding: 0 35px;
+    margin-right: 0;
+    font-size: 16px;
+    color: #868686;
+}
+
+.hd-center li a:hover {
+    color: #00a4ff;
+}
+
+/* 编程入门部分侧边栏 */
+
+.box-sidebar {
+    float: left;
+    width: 228px;
+    height: 392px;
+    margin-right: 15px;
+}
+
+.side-bg1 {
+    background-image: url(images/box2-left-bg.png);
+}
+
+.side-bg2 {
+    background-image: url(images/box3-left-bg.png);
+}
+
+.box-sidebar h4 {
+    padding-left: 35px;
+    margin-top: 45px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 2em;
+}
+
+.box-sidebar p {
+    padding-left: 35px;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* 编程入门部分上半部分图片 */
+
+.box-image {
+    float: right;
+    margin-bottom: 7px;
+    font-size: 0;
+}
+
+/* footer部分 */
+
+.footer {
+    height: 235px;
+    padding-top: 32px;
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.footer .copyright {
+    float: left;
+    margin-left: 20px;
+}
+
+.footer .copyright p {
+    margin: 23px 0 15px;
+    font-family: '宋体';
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .copyright a {
+    display: inline-block;
+    padding: 10px 28px;
+    font-size: 16px;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+}
+
+.footer .links {
+    float: right;
+}
+
+.footer .links dl {
+    float: left;
+    margin: 0 30px 0 90px;
+}
+
+.footer .links dl dt {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer .links dl dd a {
+    height: 22px;
+    font-family: '宋体';
+    font-size: 12px;
+    color: #333;
+    line-height: 22px;
+}
